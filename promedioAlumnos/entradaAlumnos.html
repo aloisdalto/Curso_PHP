@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Alumnos - Ejercicio 5</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 5</h1>
+    <p>Se ha establecido un programa para estimular a los alumnos, el cual consiste en lo siguiente: si el promedio obtenido por un alumno en el ultimo periodo es mayor o igual que 9, se le hará un descuento del 30% sobre la colegiatura y no se le cobrara IVA; si el promedio obtenido es menor que 9 deberá pagar la colegiatura completa, la cual incluye el 10% de IVA. Obtener cuanto debe pagar un alumno.</p>
+    <form class="formulario" action="promedioAlumnos.php" method="post">
+        <label for="promedio">Ingrese el promedio de notas:</label><br>
+        <input type="number" name="promedio" id="promedio" required><br>
+        <label for="monto">Ingrese el Monto de la colegiatura:</label><br>
+        <input type="number" name="monto" id="monto" required><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

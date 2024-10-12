@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master Mind</title>
+    <link rel="stylesheet" href="cssStyle.css">
+    <style> 
+        body {
+            font-family: Courier, "Lucida Console", monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+        .colores{
+            display: flex;
+        }
+
+        .colores div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            align-items: center;
+        }
+
+        .color-square {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+        .rojo {
+            background-color: red   }
+        .negro {
+            background-color: black     }
+        .azul {
+            background-color: blue     }
+        .amarillo {
+            background-color: yellow   }
+        .verde {
+            background-color: green     }
+    </style>
+</head>
+<body>
+    <h1>Juego Master Mind</h1>
+    <h2>Consiste en adivinar los colores que el computador ha seleccionado Aleatoriamente</h1>
+    <h3>Quiere jugar, coloque los numeros correspondientes a los colores ??</h2>
+    <div class="colores">
+        <div><div class="color-square azul"></div>
+        <label for="color1">Azul</label></div>
+        <div><div class="color-square rojo"></div>
+        <label for="color2">Rojo</label></div>
+        <div><div class="color-square negro"></div>
+        <label for="color3">Negro</label></div>
+        <div><div class="color-square verde"></div>
+        <label for="color4">Verde</label></div>
+        <div><div class="color-square amarillo"></div>
+        <label for="color5">Amarillo</label></div>
+    </div>
+    <br>
+
+    <form method="post" action="codigo.php">
+        <label for="num1">Eliga su primer color:</label><br>
+            <input type="radio" name="num1" value="1">Azul
+            <input type="radio" name="num1" value="2" >Rojo
+            <input type="radio" name="num1" value="3">Negro
+            <input type="radio" name="num1" value="4">Verde
+            <input type="radio" name="num1" value="5">Amarillo
+            <br><br>
+        <label for="num1">Eliga su segundo color (1-5):</label><br>
+            <input type="radio" name="num2" value="1">Azul
+            <input type="radio" name="num2" value="2" >Rojo
+            <input type="radio" name="num2" value="3">Negro
+            <input type="radio" name="num2" value="4">Verde
+            <input type="radio" name="num2" value="5">Amarillo
+            <br><br>
+        <label for="num1">Eliga su tercer color (1-5):</label><br>
+            <input type="radio" name="num3" value="1">Azul
+            <input type="radio" name="num3" value="2" >Rojo
+            <input type="radio" name="num3" value="3">Negro
+            <input type="radio" name="num3" value="4">Verde
+            <input type="radio" name="num3" value="5">Amarillo
+            <br><br>
+        <input type="submit" name="Enviar" value="Adivino">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauchos - Ejercicio 2</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <p>Calcular el total que una persona debe pagar en una cauchera, si el precio de cada caucho es de BsF 800 si se compran menos de 5 cauchos y de Bs. 700 si se compran 5 o más</p>
+    <form class="formulario" action="compraCauchos.php" method="post">
+        <label for="cauchos">Ingrese Numero de Cauchos:</label><br>
+        <input type="number" name="cauchos" id="cauchos" required><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
